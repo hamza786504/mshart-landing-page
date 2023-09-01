@@ -17,9 +17,9 @@
     <header class="header">
       <div class="container-lg d-flex align-items-center justify-content-between">
 
-        <div class="col header__logo">
+        <a href="/" class="col header__logo">
           <img src="images/logo.jpg" alt="Logo" />
-        </div>
+        </a>
 
 
         <div class="col text-end text-md-center">
@@ -30,15 +30,14 @@
           <ul class="justify-content-center">
             <li class="text-start"><a href="/">Home</a></li>
             <li class="text-start"><a href="#about_us">About</a></li>
-            <li class="text-start"><a href="#pricing">Pricing</a></li>
-            <li class="text-start"><a href="#">Contact</a></li>
+            <li class="text-start"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         </div>
         
         
         <div class="d-none d-md-block col right_side text-end">
-          <button class="px-4 btn btn-outline-primary">Click Here</button>
+          <button class="px-4 py-2 btn btn-primary">Click Here</button>
         </div>
       </div>
     </header>
@@ -65,7 +64,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about_us">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -94,8 +93,8 @@
           <div class="col-lg-4 mt-4 col-md-6">
             <div class="card_cover">
               <div class="card position-relative">
-                <img src="https://images.pexels.com/photos/16045125/pexels-photo-16045125/free-photo-of-instant-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                <div class="card_hover position-absolute" style="top: 0; height: 100%; width: 100%;">
+                <img src="./images/image1.jpeg" alt="" />
+                <div class="card_hover position-absolute d-flex flex-column justify-content-center align-items-center" style="top: 0; height: 100%; width: 100%;">
                   <h4 class="text-center text-white">Enhancing Aesthetics</h4>
                   <p class="mt-4 text-white text-center">Art injects creativity, vibrancy, and uniqueness into spaces, transforming them into visually appealing environments.</p>
                   <p class="mt-4 text-white text-center">The combination of architectural elements and carefully chosen artwork can result in stunning and unforgettable designs.</p>
@@ -105,9 +104,9 @@
           </div>
           <div class="col-lg-4 mt-4 col-md-6">
             <div class="card position-relative">
-                <img src="https://images.pexels.com/photos/210600/pexels-photo-210600.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                <div class="card_hover position-absolute" style="top: 0; height: 100%; width: 100%;">
-                  <h4 class="text-center text-white">Creating Emotional Connections:</h4>
+                                <img src="./images/image2.jpeg" alt="" />
+                <div class="card_hover position-absolute d-flex flex-column justify-content-center align-items-center" style="top: 0; height: 100%; width: 100%;">
+                  <h4 class="text-center text-white">Creating Emotional <br /> Connections:</h4>
                   <p class="mt-4 text-white text-center">Art has the power to evoke emotions and connect with people on a deeper level.</p>
                   <p class="mt-4 text-white text-center">Integrating meaningful artworks can foster a sense of belonging and identity within a space.</p>
                 </div>
@@ -115,8 +114,8 @@
           </div>
           <div class="col-lg-4 mt-4 col-md-6">
             <div class="card position-relative">
-                <img src="https://images.pexels.com/photos/1822842/pexels-photo-1822842.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-                <div class="card_hover position-absolute" style="top: 0; height: 100%; width: 100%;">
+                                <img src="./images/image3.jpeg" alt="" />
+                <div class="card_hover position-absolute d-flex flex-column justify-content-center align-items-center" style="top: 0; height: 100%; width: 100%;">
                   <h4 class="text-center text-white">Increasing Property Value</h4>
                   <p class="mt-4 text-white text-center">Well-curated art pieces can contribute to the perceived value of a property.</p>
                   <p class="mt-4 text-white text-center">Properties with distinctive art features tend to stand out in the market and command higher prices.</p>
@@ -140,7 +139,7 @@
               <div class="mx-auto text-center mb-3">
                 <img src="images/hand.png" style="height: 100px;" alt="" />
               </div>
-              <h4 class="mb-5">Collaboration with Artists:</h4>
+              <p class="mb-3" style="text-indent: 0;">Collaboration with Artists:</p>
               <p>Custom artworks resonate with the project's theme or purpose.</p>
               <p>Collaborative efforts infuse authenticity into the space.</p>
             </div>
@@ -150,7 +149,7 @@
               <div class="mx-auto text-center mb-3">
                 <img src="images/goal.png" style="height: 100px;" alt="" />
               </div>
-              <h4 class="mb-5">Curated Installations:</h4>
+             <p class="mb-3" style="text-indent: 0;">Curated Installations:</p>
               <p>Art strategy aligns with the project's identity and target audience.</p>
               <p>Art installations that reflect the property's ambiance, whether it's a luxury residence, commercial space, or mixed-use development.</p>
             </div>
@@ -158,9 +157,9 @@
           <div class="col-lg-4 mt-4 col-md-6">
             <div class="card">
               <div class="mx-auto text-center mb-3">
-                <img src="images/mobile.png" style="height: 100px;" alt="" />
+                <img src="images/face.png" style="height: 100px;" alt="" />
               </div>
-              <h4 class="mb-5">Incorporating Art Features:</h4>
+             <p class="mb-3" style="text-indent: 0;">Incorporating Art Features:</p>
               <p>Integrate art elements as architectural features, such as sculptural installations, murals, or mosaic designs.</p>
               <p>Use artistic elements to define spaces and offer focal points that draw attention.</p>
             </div>
@@ -170,50 +169,56 @@
     </section>
 
 
-    <section class="footer">
+    <section class="footer" id="contact">
       <h3 class="text-center text-dark">Contact</h3>
 
       <div class="container-xl mt-1">
         <div class="row align-items-start justify-content-center">
           <div class="col-sm-6 mt-4">
             <div class="telephone_details">
-              <p style="font-size: 22px;">Telephone:</p>
+              <p style="font-size: 25px;">Telephone:</p>
               <span>
-                <a  style="text-decoration: none;" class="text-dark" href="tel:+372 52 04 855">+372 52 04 855</a>
+                <a  style="text-decoration: none; font-size: 20px;" class="text-dark" href="tel:+372 52 04 855">+372 52 04 855</a>
                 <br />
-                <a  style="text-decoration: none;" class="text-dark" href="tel:+372 58 467 764">+372 58 467 764</a>
+                <a  style="text-decoration: none; font-size: 20px;" class="text-dark" href="tel:+372 58 467 764">+372 58 467 764</a>
               </span>
             </div>
             <div class="telephone_details mt-4">
-              <p style="font-size: 22px;">Mail to:</p>
+              <p style="font-size: 25px;">Mail to:</p>
               <span>
-                <a href="mailto:info@mshartproduction.com" style="text-decoration: none;" class="text-primary">info@mshartproduction.com</a>
+                <a href="mailto:info@mshartproduction.com" style="text-decoration: none; font-size: 20px;" class="text-primary">info@mshartproduction.com</a>
                 <br />
-                <a href="mailto:sales@mshartproduction.com" style="text-decoration: none;" class="text-primary">sales@mshartproduction.com</a>
+                <a href="mailto:sales@mshartproduction.com" style="text-decoration: none; font-size: 20px;" class="text-primary">sales@mshartproduction.com</a>
               </span>
+            </div>
+
+            <div class="mt-5">
+              <div class="row d-flex align-items-center justify-content-center mx-auto">
+                <div class="col-12 text-center">
+                  <p style="font-size: 20px;">MSHART PRODUCTION LTD</p>
+                </div>
+                <div class="col-12 text-center">
+                  <p style="font-size: 20px;">Tallinn</p>
+                </div>
+                <div class="col-12 text-center">
+                  <p style="font-size: 20px;">Estonia</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-sm-6 mt-4">
             <form action="" method="post">
-              <input type="email" class="mb-3 bg-white border-0 py-3 px-2" placeholder="Email" />
-              <input type="text" class="mb-3 bg-white border-0 py-3 px-2" placeholder="Name" />
-              <textarea name="query" class="mb-3 bg-white border-0 py-3 px-2" id="query" placeholder="Type here..."></textarea>
-              <button type="submit" class="btn btn-outline-primary" id="form_submit">Submit</button>
+              <input type="email" class="mb-3 bg-white border-0 p-3" placeholder="Email" />
+              <input type="text" class="mb-3 bg-white border-0 p-3" placeholder="Name" />
+              <textarea name="query" class="mb-3 bg-white border-0 p-3" id="query" placeholder="Type here..."></textarea>
+              <button type="submit" class="btn btn-primary px-5 py-3" id="form_submit">Submit</button>
             </form>
           </div>
-        </div>
-      </div>
-      <div class="container-xl mt-5">
-        <div class="row d-flex align-items-center justify-content-center flex-wrap mx-auto" style="max-width: 900px;">
-          <div class="col-4">
-            <p>MSHART PRODUCTION LTD</p>
-          </div>
-          <div class="col-4">
-            <p>Tallinn</p>
-          </div>
-          <div class="col-4">
-            <p>Estonia</p>
-          </div>
+
+
+
+
+
         </div>
       </div>
     </section>

@@ -3,14 +3,35 @@
   margin: 0;
   box-sizing: border-box;
   user-select: none;
+  font-family: TaldaSans-Light;
 }
 :root {
   --orange-dark: #d4774f;
-  --orange: #ea8362;
+  --orange: #fc0d0d;
   --gray-dark: #696969;
   --gray: #bebebe;
 }
+/* @font-face {
+  font-family: TaldaSans-black;
+  src: url("../font/TildaSans-Black.ttf");
+} */
+@font-face {
+  font-family: TaldaSans-Bold;
+  src: url("../font/TildaSans-Bold.ttf");
+}
 
+@font-face {
+  font-family: TaldaSans-Regular;
+  src: url("../font/TildaSans-Regular.ttf");
+}
+@font-face {
+  font-family: TaldaSans-Light;
+  src: url("../font/TildaSans-Light.ttf");
+}
+
+p{
+  margin-bottom: 0;
+}
 .header__logo img {
   max-height: 140px;
   height: 100%;
@@ -78,12 +99,12 @@
 
 .banner h1 {
   font-size: 2.3rem;
-  font-weight: 500;
+  font-family: TaldaSans-Bold;
   margin-top: 10vh;
   margin-bottom: 0;
 }
 .text-primary {
-  color: var(--orange-dark) !important;
+  color: var(--orange) !important;
 }
 
 
@@ -98,6 +119,7 @@
 }
 .about .main_text{
   font-size: 24px;
+  font-family: TaldaSans-Bold;
   color: var(--gray-dark);
   font-style: italic;
   font-weight: 600;
@@ -119,7 +141,8 @@
   overflow: hidden;
 }
 .why_us .card .card_hover{
-  left: -100%;
+  /* left: -100%; */
+  left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5));
   transition: all linear 0.3s;
   padding: 2vw;
@@ -127,7 +150,15 @@
 .why_us .card:hover .card_hover{
   left: 0;
 }
-.why_us .card:hover .card_hover h4{
+.why_us .card{
+  aspect-ratio: 1;
+}
+.why_us .card img{
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.why_us .card .card_hover h4{
   font-size: 20px;
 }
 
@@ -140,6 +171,14 @@
   padding: 2vw;
   border: none;
 }
+.strategies p{
+  text-indent: 15px;
+}
+
+
+.strategies h3 , .why_us h3 , .footer h3{
+  font-family: TaldaSans-Bold;
+}
 
 
 
@@ -149,12 +188,16 @@
 }
 .footer form > input , .footer form textarea{
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .footer form textarea{
   min-height: 200px;
 }
 
+
+input , textarea{
+  outline: none;
+}
 
 
 
@@ -187,6 +230,16 @@
   color: black;
   background-color: transparent;
   border: 2px solid var(--orange);
+}
+.btn-outline-primary:hover{
+  transform: scale(1.02);
+  transition: all linear 0.1s;
+}
+
+.btn-primary , .btn-primary:hover{
+  color: white;
+  background-color: var(--orange);
+  border: none;
 }
 .btn-outline-primary:hover{
   transform: scale(1.02);
