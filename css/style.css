@@ -151,7 +151,11 @@ p{
   left: 0;
 }
 .why_us .card{
-  aspect-ratio: 1;
+  min-height: 340px;
+  max-height: 400px;
+  height: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 .why_us .card img{
   width: auto;
